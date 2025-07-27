@@ -3,59 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emrullah Karacan</title>
+    <title>Emrullah Karacan - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Ana İçerik -->
-        <div class="content">
-            <!-- Sol taraf - Metin -->
-            <div class="text-section">
-                <h1>Emrullah Karacan</h1>
-                
-                <!-- Bu satırı değiştirin - Mesleğiniz -->
-                <p class="title">Senior Software Engineer</p>
-                
-                <!-- Bu paragrafı değiştirin - Kendiniz hakkında -->
-                <p class="description">
-                    I'm a passionate developer with expertise in modern web technologies. 
-                    I love creating elegant solutions to complex problems and building 
-                    applications that make a difference.
-                </p>
-                
-                <!-- Sosyal medya linkleri - URL'leri değiştirin -->
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/emrullahkaracan" target="_blank">LinkedIn</a>
-                    <span class="separator">•</span>
-                    <a href="https://github.com/emrullahkaracan69" target="_blank">GitHub</a>
-                    <span class="separator">•</span>
-                    <a href="mailto:info@emrullahkaracan.com">Email</a>
+    <!-- Ana Sayfa -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="memoji-container">
+                <!-- Erkek Memoji - Animasyonlu -->
+                <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man.png" alt="Memoji" class="memoji">
+            </div>
+            
+            <h2 class="greeting">Hello world, my name is</h2>
+            <h1 class="name">&lt;Emrullah&gt;</h1>
+            
+            <!-- Sosyal Medya İkonları -->
+            <div class="social-links">
+                <a href="https://linkedin.com/in/emrullahkaracan" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/emrullahkaracan69" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/emrullahkaracan" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sağ taraf - TLDR bölümü -->
+        <div class="tldr-section">
+            <h3>TL;DR</h3>
+            <p>
+                I'm a Istanbul based Software Developer with a background in Computer Science and Full Stack Development. 🤓
+            </p>
+            <p>
+                My current research focus is on developing efficient web applications and scalable solutions to solve real-world problems. 💻
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-dark">RESUME</a>
+                <a href="mailto:info@emrullahkaracan.com" class="btn btn-dark">EMAIL ME</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Works Bölümü -->
+    <section class="works">
+        <h2>SELECTED WORKS</h2>
+        
+        <div class="works-grid">
+            <!-- Proje 1 -->
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://via.placeholder.com/350x200/4A90E2/FFFFFF?text=Project+1" alt="Project 1">
+                    <span class="work-tag"><i class="fab fa-github"></i> GitHub</span>
+                </div>
+                <h3>E-Commerce Platform</h3>
+                <p class="work-year">2023</p>
+            </div>
+
+            <!-- Proje 2 -->
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://via.placeholder.com/350x200/50C878/FFFFFF?text=Project+2" alt="Project 2">
+                    <span class="work-tag"><i class="fab fa-github"></i> GitHub</span>
+                </div>
+                <h3>Task Management System</h3>
+                <p class="work-year">2023</p>
+            </div>
+
+            <!-- Proje 3 -->
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://via.placeholder.com/350x200/FF6B6B/FFFFFF?text=Project+3" alt="Project 3">
+                    <span class="work-tag"><i class="fab fa-github"></i> GitHub</span>
+                </div>
+                <h3>Real-time Chat Application</h3>
+                <p class="work-year">2022</p>
+            </div>
+
+            <!-- Proje 4 -->
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://via.placeholder.com/350x200/FFA500/FFFFFF?text=Project+4" alt="Project 4">
+                    <span class="work-tag"><i class="fas fa-globe"></i> Medium</span>
+                </div>
+                <h3>Weather App with React</h3>
+                <p class="work-year">2022</p>
+            </div>
+
+            <!-- Proje 5 -->
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://via.placeholder.com/350x200/9B59B6/FFFFFF?text=Project+5" alt="Project 5">
+                    <span class="work-tag"><i class="fab fa-tableau"></i> Tableau</span>
+                </div>
+                <h3>Data Visualization Dashboard</h3>
+                <p class="work-year">2021</p>
+            </div>
+
+            <!-- Proje 6 -->
+            <div class="work-item">
+                <div class="work-image">
+                    <img src="https://via.placeholder.com/350x200/3498DB/FFFFFF?text=Project+6" alt="Project 6">
+                    <span class="work-tag"><i class="fab fa-github"></i> GitHub</span>
+                </div>
+                <h3>Mobile App Development</h3>
+                <p class="work-year">2021</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Bölümü -->
+    <section class="experience">
+        <div class="exp-background"></div>
+        <div class="exp-content">
+            <h2>I'VE WORKED WITH TECH COMPANIES, STARTUPS AND NON-PROFIT ORGANIZATIONS.</h2>
+            
+            <div class="exp-grid">
+                <div class="exp-item">
+                    <h4>Senior Software Developer</h4>
+                    <p>Microsoft, Istanbul</p>
+                </div>
+                <div class="exp-item">
+                    <h4>Full Stack Developer</h4>
+                    <p>Trendyol, Istanbul</p>
+                </div>
+                <div class="exp-item">
+                    <h4>Frontend Developer</h4>
+                    <p>Getir, Istanbul</p>
+                </div>
+                <div class="exp-item">
+                    <h4>Software Engineer</h4>
+                    <p>Peak Games, Istanbul</p>
+                </div>
+                <div class="exp-item">
+                    <h4>Web Developer</h4>
+                    <p>Freelance</p>
+                </div>
+                <div class="exp-item">
+                    <h4>Junior Developer</h4>
+                    <p>Startup, Istanbul</p>
                 </div>
             </div>
             
-            <!-- Sağ taraf - Erkek ikonu -->
-            <div class="image-section">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Erkek avatarı -->
-                    <circle cx="100" cy="100" r="90" fill="#f0f0f0"/>
-                    <!-- Yüz -->
-                    <circle cx="100" cy="85" r="35" fill="#fdbcb4"/>
-                    <!-- Saç -->
-                    <path d="M 65 75 Q 100 55, 135 75 L 135 70 Q 100 45, 65 70 Z" fill="#4a4a4a"/>
-                    <!-- Gözler -->
-                    <circle cx="88" cy="80" r="2" fill="#333"/>
-                    <circle cx="112" cy="80" r="2" fill="#333"/>
-                    <!-- Ağız -->
-                    <path d="M 90 95 Q 100 100, 110 95" stroke="#333" stroke-width="1.5" fill="none"/>
-                    <!-- Gövde -->
-                    <ellipse cx="100" cy="145" rx="45" ry="35" fill="#4a90e2"/>
-                    <!-- Gömlek yakası -->
-                    <path d="M 85 120 L 100 130 L 115 120" fill="white"/>
-                </svg>
+            <a href="#" class="btn btn-dark">RESUME</a>
+        </div>
+    </section>
+
+    <!-- About Me Bölümü -->
+    <section class="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/400x400/F0F0F0/333333?text=Your+Photo" alt="Emrullah Karacan">
+            </div>
+            
+            <div class="about-text">
+                <h2>A Bit About Me</h2>
+                <p>
+                    I was born and raised in Turkey with over 5 years of work experience. 
+                    I graduated from Computer Science and have been passionate about technology since then.
+                </p>
+                <p>
+                    Outside of work, I enjoy playing chess, watching movies, hiking, and gaming. 
+                    I love learning new technologies and building projects that make a difference.
+                </p>
+                
+                <div class="skills-section">
+                    <div class="skill-column">
+                        <h4>Programming Languages:</h4>
+                        <p>JavaScript, TypeScript, Python, Java, C#, HTML/CSS</p>
+                        
+                        <h4 style="margin-top: 20px;">Frameworks:</h4>
+                        <p>React, Node.js, Express, Next.js, .NET, Django</p>
+                    </div>
+                    
+                    <div class="skill-column">
+                        <h4>Tools & Technologies:</h4>
+                        <p>Git, Docker, AWS, MongoDB, PostgreSQL, Redis, GraphQL, REST API</p>
+                        
+                        <h4 style="margin-top: 20px;">Other Skills:</h4>
+                        <p>UI/UX Design, Agile, CI/CD, Testing, Cloud Architecture</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Contact Bölümü -->
+    <section class="contact">
+        <div class="contact-content">
+            <div class="contact-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=600&fit=crop" alt="Contact">
+            </div>
+            
+            <div class="contact-text">
+                <h2>Reach out</h2>
+                
+                <h3>Emrullah Karacan</h3>
+                <p><a href="mailto:info@emrullahkaracan.com">info@emrullahkaracan.com</a></p>
+                
+                <h4>CONNECT WITH ME</h4>
+                <div class="contact-social">
+                    <a href="https://linkedin.com/in/emrullahkaracan"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/emrullahkaracan69"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/emrullahkaracan"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:info@emrullahkaracan.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
