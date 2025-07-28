@@ -75,6 +75,7 @@ section:last-child {
 }
 
 /* 1. BÖLÜM: GİRİŞ */
+/* 1. BÖLÜM: GİRİŞ */
 .hero-section {
     display: flex;
     align-items: center;
@@ -101,11 +102,13 @@ section:last-child {
 .hello-text {
     font-family: var(--mono-font);
     font-size: 1.1rem;
+    color: #fff; /* Ekledim */
 }
 
 .name-text {
     font-size: 3rem;
     margin: 0.5rem 0;
+    color: #fff; /* Ekledim */
 }
 
 .social-icons {
@@ -116,10 +119,6 @@ section:last-child {
     font-size: 2rem;
     margin: 0 0.75rem;
     transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #555;
 }
 
 .hero-right h2 {
@@ -139,6 +138,7 @@ section:last-child {
 .hero-buttons .btn {
     margin-right: 1rem;
 }
+
 
 /* 2. BÖLÜM: HAKKIMDA */
 .about-section {
