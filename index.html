@@ -15,38 +15,39 @@
 </head>
 <body>
 
-    <div class="container">
-        <!-- 1. BÖLÜM: GİRİŞ -->
-        <section id="hero" class="hero-section">
-            <div class="hero-left" style="background-color: #000; color: #fff; padding: 2rem;">
-                <!-- DÜZENLE: Memoji resim yolu doğru olmalı -->
-                <img src="assets/icon.gif" alt="Memoji icon" id="memoji">
-                <p class="hello-text">Hello world! My name is</p>
-                <!-- DÜZENLE: Kendi adın -->
-                <h1 class="name-text">&lt;Emrullah&gt;</h1>
-                <div class="social-icons">
-                    <!-- DÜZENLE: Kendi sosyal medya linklerin -->
-                    <a href="https://www.linkedin.com/in/emrullah-karacan-4b596b21b" target="_blank" style="color: #fff;"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/emrullahkaracan69" target="_blank" style="color: #fff;"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.kaggle.com/emrullahkaracan" target="_blank" style="color: #fff;"><i class="fa-brands fa-kaggle"></i></a>
-                </div>
+    <!-- 1. BÖLÜM: GİRİŞ (Tam Sayfa) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-left">
+            <!-- DÜZENLE: Memoji resim yolu doğru olmalı -->
+            <img src="assets/memoji.gif" alt="Memoji icon" id="memoji">
+            <p class="hello-text">Hello world! My name is</p>
+            <!-- DÜZENLE: Kendi adın -->
+            <h1 class="name-text">&lt;Emrullah&gt;</h1>
+            <div class="social-icons">
+                <!-- DÜZENLE: Kendi sosyal medya linklerin -->
+                <a href="https://www.linkedin.com/in/emrullah-karacan-4b596b21b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/emrullahkaracan69" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.kaggle.com/emrullahkaracan" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
             </div>
-            <div class="hero-right">
-                <h2>ELI5;</h2>
-                <!-- DÜZENLE: Kendini tanıtan kısa bir yazı -->
-                <p>
-                    I'am Istanbul based Jr. Data Scientist with a background in Computer Engineering and Ai Engineering. My current research focuses on the intersection of large language models, structured data, and intelligent agents to develop scalable AI solutions for real-world optimization and decision-making problems.
-                </p>
-                <div class="hero-buttons">
-                    <!-- DÜZENLE: Varsa CV dosyanın linki -->
-                    <a href="assets/cv.pdf" class="btn" target="_blank">RESUME</a>
-                    <!-- DÜZENLE: E-posta adresin -->
-                    <a href="mailto:emrullahkaracan@outlook.com" class="btn">EMAIL ME</a>
-                </div>
+        </div>
+        <div class="hero-right">
+            <h2>ELI5;</h2>
+            <!-- DÜZENLE: Kendini tanıtan kısa bir yazı -->
+            <p>
+                I'am Istanbul based Jr. Data Scientist with a background in Computer Engineering and Ai Engineering. My current research focuses on the intersection of large language models, structured data, and intelligent agents to develop scalable AI solutions for real-world optimization and decision-making problems.
+            </p>
+            <div class="hero-buttons">
+                <!-- DÜZENLE: Varsa CV dosyanın linki -->
+                <a href="assets/cv.pdf" class="btn" target="_blank">RESUME</a>
+                <!-- DÜZENLE: E-posta adresin -->
+                <a href="mailto:emrullahkaracan@outlook.com" class="btn">EMAIL ME</a>
             </div>
-        </section>
-        
+        </div>
+    </section>
 
+    <!-- Diğer Bölümler için Ana Konteyner -->
+    <div class="container">
+        
         <!-- 4. BÖLÜM: ÇALIŞMALAR -->
         <section id="works" class="works-section">
             <h2>SELECTED WORKS</h2>
@@ -94,7 +95,7 @@
                 </div>
                     <!-- Örnek Proje 5 -->
                 <div class="work-item">
-                     <a href="https://ybsansiklopedi.com/wp-content/uploads/2024/02/arac_kiralama.pdf" target="_blank">
+                     <a href="ybsansiklopedi.com/wp-content/uploads/2024/02/arac_kiralama.pdf" target="_blank">
                         <img src="assets/Maintenance-Cost-Prediction.png" alt="Proje 5">
                         <div class="work-info">
                             <h3><i class="fa-solid fa-book-open"></i> Maintenance Cost Prediction & Article</h3>
@@ -103,6 +104,105 @@
                     </a>
                 </div>
                 <!-- Diğer projelerini buraya ekle -->
+            </div>
+        </section>
+        
+        <!-- 3. BÖLÜM: DENEYİM & EĞİTİM -->
+        <section id="timeline" class="experience-education-section">
+            <div class="section-title">
+                <h2>Education & Experience</h2>
+            </div>
+
+            <div class="timeline-container">
+
+                <!-- EĞİTİM SÜTUNU (Sol Taraf) -->
+                <div class="timeline-column">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        
+                        <!-- Eğitim 1: Yüksek Lisans (En yeni) -->
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-date">2025 - Currently</span>
+                                <h4 class="timeline-title">M.Sc. in Artificial Intelligence</h4>
+                                <span class="timeline-subtitle">Gebze Technical University</span>
+                                <p class="timeline-description">
+                                    I am actively working towards becoming an expert in AI engineering, with a strong interest in Large Language Models (LLMs) and Computer Vision. I have been admitted to an Artificial Intelligence Engineering master's program, which I will begin soon.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Eğitim 2: Lisans -->
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-date">2020 - 2024</span>
+                                <h4 class="timeline-title">B.S. in Computer Engineering</h4>
+                                <span class="timeline-subtitle">Duzce University</span>
+                                <p class="timeline-description">
+                                    During my undergraduate studies, I built a solid foundation in software development, database management, data science, and statistical analysis. I developed several hands-on projects in these areas.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- DENEYİM SÜTUNU (Sağ Taraf) -->
+                <div class="timeline-column">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+
+                        <!-- Deneyim 1: (En yeni) -->
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-date">June 2025 - Currently</span>
+                                <h4 class="timeline-title">Data Specialist</h4>
+                                <span class="timeline-subtitle">AsyaLogic</span>
+                                <p class="timeline-description">
+                                    I was responsible for data collection, KPI tracking, and analysis related to both employees and systems. I conducted performance evaluations and generated reports based on the analyzed data, providing insights to support decision-making processes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Deneyim 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-date">December 2024 - May 2025</span>
+                                <h4 class="timeline-title">Prompt Engineer</h4>
+                                <span class="timeline-subtitle">Outlier</span>
+                                <p class="timeline-description">
+                                    Designed and optimized effective prompts for various large language models (ChatGPT, Claude, Gemini, Mistral, etc.) across multiple use cases. Focused on improving output quality in areas such as content generation, data analysis, customer support automation, and code generation. Performed prompt testing, comparative evaluations, and iterative refinements to enhance model behavior. Actively contributed to continuous improvement processes to maximize the performance of LLM-based systems.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Deneyim 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-date">July 2023 - February 2024</span>
+                                <h4 class="timeline-title">Data Science Intern</h4>
+                                <span class="timeline-subtitle">OptiWisdom</span>
+                                <p class="timeline-description">
+                                    Gained hands-on experience in data preprocessing, future engineering, machine learning model development, and statistical analysis in the car rental domain.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Deneyim 4 (Boş Örnek) -->
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span class="timeline-date">August 2024 - September 2024</span>
+                                <h4 class="timeline-title">Data Analysis and Reporting Intern</h4>
+                                <span class="timeline-subtitle">Pointix</span>
+                                <p class="timeline-description">
+                                    Conducted data visualization and reporting for student performance in an online training program. Analyzed test results to identify learning patterns and provided actionable insights to improve educational content. Additionally, performed A/B testing for the project's website to optimize user experience and engagement.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -138,40 +238,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- 3. BÖLÜM: DENEYİM -->
-        <section id="experience" class="experience-section">
-            <h2>I'VE WORKED WITH TECH COMPANIES, STARTUPS AND NON-PROFIT ORGANIZATIONS.</h2>
-            <div class="experience-grid">
-                <!-- DÜZENLE: Deneyimlerini buraya ekle -->
-                <div class="job">
-                    <h4>Senior Data Scientist</h4>
-                    <p>Apple, Austin</p>
-                </div>
-                <div class="job">
-                    <h4>Marketing Analytics Manager</h4>
-                    <p>Penbrothers, Philippines</p>
-                </div>
-                <div class="job">
-                    <h4>Data Analyst - Graduate Intern</h4>
-                    <p>Covenant House, New York</p>
-                </div>
-                <div class="job">
-                    <h4>Senior Data Scientist</h4>
-                    <p>CVS Health, Boston</p>
-                </div>
-                <div class="job">
-                    <h4>Product Analyst</h4>
-                    <p>e27, Singapore</p>
-                </div>
-                <div class="job">
-                    <h4>Consultant (Part-Time)</h4>
-                    <p>Dataconomy, Germany</p>
-                </div>
-            </div>
-             <!-- DÜZENLE: Varsa CV dosyanın linki -->
-            <a href="assets/cv.pdf" target="_blank" class="btn resume-btn-bottom">RESUME</a>
         </section>
 
         

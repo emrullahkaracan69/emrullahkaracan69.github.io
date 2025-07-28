@@ -74,41 +74,57 @@ section:last-child {
     color: var(--text-color);
 }
 
-/* 1. BÖLÜM: GİRİŞ */
-/* 1. BÖLÜM: GİRİŞ */
+/* 1. BÖLÜM: GİRİŞ - YENİDEN DÜZENLENDİ */
 .hero-section {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 90vh;
-}
-
-.hero-left, .hero-right {
-    flex: 1;
-    padding: 1rem;
+    align-items: stretch;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
 }
 
 .hero-left {
+    flex: 0 0 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 2rem;
 }
 
+
 #memoji {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 1rem;
+    width: 400px; /* İstenen boyutlarda */
+    height: 400px;
+    /*margin-bottom: 1rem;*/
     transition: transform 0.3s ease;
+}
+
+.hero-right {
+    flex: 0 0 50%;
+    background-color: #f9f9f9; /* Sağ taraf için başka bir arka plan rengi */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    text-align: center; /* Yazı ortalaması */
 }
 
 .hello-text {
     font-family: var(--mono-font);
-    font-size: 1.1rem;
-    color: #fff; /* Ekledim */
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .name-text {
     font-size: 3rem;
     margin: 0.5rem 0;
-    color: #fff; /* Ekledim */
+    color: #fff;
 }
 
 .social-icons {
@@ -116,244 +132,404 @@ section:last-child {
 }
 
 .social-icons a {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0 0.75rem;
     transition: color 0.3s ease;
+    color: #fff; /* İkon rengini beyaz yap */
 }
 
 .hero-right h2 {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Başlık font boyutu */
     margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .hero-right p {
-    font-size: 1.1rem;
-    max-width: 450px;
+    font-size: 1.3rem;
+    max-width: 500px;
+    color: #333;
+    margin-bottom: 2rem;
 }
 
 .hero-buttons {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .hero-buttons .btn {
     margin-right: 1rem;
 }
 
+/* Hero bölümünden sonra gelen ilk bölümün üstüne boşluk ekle */
+.container > section:first-of-type {
+    padding-top: 5rem;
+}
+
 
 /* 2. BÖLÜM: HAKKIMDA */
 .about-section {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+display: flex;
+align-items: center;
+gap: 3rem;
 }
 
 .about-image {
-    flex-basis: 35%;
+flex-basis: 35%;
 }
 
 .about-image img {
-    width: 100%;
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+width: 100%;
+border-radius: 50%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
 }
 
 .about-content {
-    flex-basis: 65%;
+flex-basis: 65%;
 }
 
 .about-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 1.5rem;
+margin-top: 2rem;
 }
 
 .skill-category h3 {
-    font-family: var(--primary-font);
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+font-family: var(--primary-font);
+font-weight: 700;
+font-size: 1.1rem;
+margin-bottom: 0.5rem;
 }
 
 .skill-category p {
-    font-size: 1rem;
-    color: #555;
+font-size: 1rem;
+color: #555;
 }
 
 /* 3. BÖLÜM: DENEYİM */
-.experience-section {
-    background-image: var(--gradient-bg-image);
-    background-size: cover;
+/* 3. BÖLÜM: DENEYİM & EĞİTİM - YENİLENMİŞ STİLLER */
+.experience-education-section {
+    padding: 5rem 0;
     text-align: center;
-    padding: 6rem 2rem;
-    border-radius: 10px;
 }
 
-.experience-section h2 {
-    font-size: 2rem;
-    max-width: 600px;
-    margin: 0 auto 3rem auto;
-    color: var(--text-color);
-}
-
-.experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto 3rem auto;
-    text-align: left;
-}
-
-.job {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
-    border-radius: 5px;
-    border-bottom: 2px solid var(--text-color);
-}
-
-.job h4 {
-    font-family: var(--primary-font);
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-
-.job p {
-    color: #333;
-    margin-top: 0.25rem;
-}
-
-.resume-btn-bottom {
-    margin: 0 auto;
-}
-
-/* 4. BÖLÜM: ÇALIŞMALAR */
-.works-section h2 {
-    text-align: center;
+.experience-education-section .section-title h2 {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
-.works-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem; /* Sütunlar arası boşluk sıfırlandı, hizalama içeriden yapılacak */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.work-item a {
-    display: block;
-    border-bottom: 2px solid var(--text-color);
-    padding-bottom: 1rem;
+.timeline-column {
+    flex: 1;
+    position: relative;
+}
+
+.timeline-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-family: var(--mono-font);
+    display: inline-block;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.timeline {
+    position: relative;
+}
+
+/* === ASIL DEĞİŞİKLİKLER BURADA BAŞLIYOR === */
+
+/* Dikey Çizgi, artık sütunun tam ortasında değil, kenarında */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #e0e0e0;
+    top: 15px;
+    bottom: 15px;
+    /* Her sütunun iç kenarında duracak şekilde ayarlandı */
+}
+
+/* Sol Sütun (EĞİTİM) için çizgi SAĞDA */
+.timeline-column:first-child .timeline::after {
+    right: 0;
+}
+
+/* Sağ Sütun (DENEYİM) için çizgi SOLDA */
+.timeline-column:last-child .timeline::after {
+    left: 0;
+}
+
+/* Timeline Elemanı, artık tüm sütun genişliğini kullanıyor */
+.timeline-item {
+    position: relative;
+    width: 100%;
+    padding: 15px 40px; /* Kenarlardan boşluk */
+    box-sizing: border-box;
+}
+
+/* İçerik Kutusu */
+.timeline-content {
+    position: relative;
+    padding: 20px;
+    background: var(--bg-color);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
+    text-align: left; /* Metin her zaman sola dayalı */
+    width: 100%; /* Bu sayede kutu genişler! */
 }
-
-.work-item a:hover {
+.timeline-content:hover {
     transform: translateY(-5px);
 }
 
+/* Zaman Çizgisi Noktaları */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: var(--bg-color);
+    border: 3px solid #ccc;
+    top: 28px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Sol Sütundaki elemanların noktası SAĞDA */
+.timeline-column:first-child .timeline-item::after {
+    right: -8px; 
+}
+
+/* Sağ Sütundaki elemanların noktası SOLDA */
+.timeline-column:last-child .timeline-item::after {
+    left: -8px;
+}
+
+/* Kutucukların okları */
+.timeline-content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 26px;
+    width: 0;
+    z-index: 1;
+    border: medium solid var(--bg-color);
+    filter: drop-shadow(0 1px 0.5px rgba(0,0,0,0.08));
+}
+
+/* Sol Sütundaki kutucukların oku */
+.timeline-column:first-child .timeline-content::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--bg-color);
+}
+
+/* Sağ Sütundaki kutucukların oku */
+.timeline-column:last-child .timeline-content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--bg-color) transparent transparent;
+}
+
+
+/* Metin Stilleri (DEĞİŞİKLİK YOK) */
+.timeline-date, .timeline-title, .timeline-subtitle, .timeline-description {
+    /* Bu kısımlar aynı kalabilir */
+}
+
+.timeline-date {
+    display: block;
+    font-size: 0.85rem;
+    font-family: var(--mono-font);
+    color: #666;
+    margin-bottom: 8px;
+}
+.timeline-title {
+    font-size: 1.15rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    margin: 0;
+}
+.timeline-subtitle {
+    display: block;
+    font-size: 0.95rem;
+    color: #555;
+    margin: 5px 0 10px 0;
+    font-style: italic;
+}
+.timeline-description {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* MOBİL İÇİN RESPONSIVE AYARLAR */
+@media (max-width: 992px) {
+    .timeline-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+    /* Mobilde her şey sola yaslanır, standart timeline görünümü */
+    .timeline::after {
+        left: 15px !important;
+        right: auto !important;
+    }
+    .timeline-item {
+        padding-left: 55px;
+        padding-right: 15px;
+    }
+    .timeline-item::after {
+        left: 8px !important;
+        right: auto !important;
+    }
+    .timeline-content::before {
+        left: -10px !important;
+        right: auto !important;
+        border-width: 10px 10px 10px 0 !important;
+        border-color: transparent var(--bg-color) transparent transparent !important;
+    }
+}
+
+
+/* 4. BÖLÜM: ÇALIŞMALAR */
+.works-section h2 {
+text-align: center;
+font-size: 2.5rem;
+margin-bottom: 3rem;
+}
+
+.works-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.work-item a {
+display: block;
+border-bottom: 2px solid var(--text-color);
+padding-bottom: 1rem;
+transition: transform 0.3s ease;
+}
+
+.work-item a:hover {
+transform: translateY(-5px);
+}
+
 .work-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    background-color: #f0f0f0;
+width: 100%;
+height: 200px;
+object-fit: cover;
+margin-bottom: 1rem;
+background-color: #f0f0f0;
 }
 
 .work-info h3 {
-    font-size: 1.2rem;
-    font-family: var(--primary-font);
+font-size: 1.2rem;
+font-family: var(--primary-font);
 }
 
 .work-info h3 i {
-    margin-right: 0.5rem;
+margin-right: 0.5rem;
 }
 
 .work-info span {
-    color: #777;
-    font-size: 0.9rem;
+color: #777;
+font-size: 0.9rem;
 }
 
 /* 5. BÖLÜM: İLETİŞİM */
 .contact-section {
-    display: flex;
-    background-color: #f9f9f9;
-    padding: 0;
-    border-radius: 10px;
-    overflow: hidden;
+display: flex;
+background-color: #f9f9f9;
+padding: 0;
+border-radius: 10px;
+overflow: hidden;
 }
 
 .contact-image {
-    flex: 1;
+flex: 1;
 }
 
 .contact-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
 }
 
 .contact-info {
-    flex: 1;
-    padding: 4rem;
+flex: 1;
+padding: 4rem;
 }
 
 .contact-info h2 {
-    font-size: 2.5rem;
+font-size: 2.5rem;
 }
 
 .contact-info h3 {
-    font-family: var(--primary-font);
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 1rem;
+font-family: var(--primary-font);
+font-size: 1.2rem;
+font-weight: 500;
+margin-top: 1rem;
 }
 
 .contact-info p {
-    margin-bottom: 2rem;
+margin-bottom: 2rem;
 }
 
 .contact-info span {
-    font-family: var(--mono-font);
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+font-family: var(--mono-font);
+font-size: 0.9rem;
+letter-spacing: 1px;
 }
 
 .social-icons-contact {
-    margin-top: 1rem;
+margin-top: 1rem;
 }
 
 .social-icons-contact a {
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
+font-size: 1.5rem;
+margin-right: 1.5rem;
 }
 
 /* RESPONSIVE TASARIM */
 @media (max-width: 768px) {
-    .hero-section, .about-section, .contact-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-right {
-        margin-top: 3rem;
-    }
-    .hero-right p {
-        margin: 0 auto;
-    }
-    .about-image {
-        max-width: 250px;
-        margin: 0 auto;
-    }
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    .contact-info {
-        padding: 2rem;
-    }
+.hero-section, .about-section, .contact-section {
+flex-direction: column;
+text-align: center;
+}
+.hero-right {
+margin-top: 3rem;
+}
+.hero-right p {
+margin: 0 auto;
+}
+.about-image {
+max-width: 250px;
+margin: 0 auto;
+}
+.skills-grid {
+grid-template-columns: 1fr;
+}
+.contact-info {
+padding: 2rem;
+}
 }
